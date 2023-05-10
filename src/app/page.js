@@ -1,5 +1,5 @@
 import Slider from "@app/home/slider";
-import styles from "./page.module.css";
+import styles from "./page.module.css"
 import Banner from "@app/home/banner";
 
 

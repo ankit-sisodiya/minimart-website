@@ -65,7 +65,7 @@ body{
 .header-bottom-navbar a{
     margin: 0px 14px;
     padding: 5px 5px;
-    color: #fff;
+    color: #fff !important  ;
  }
 
  .header-bottom-navbar a:hover{

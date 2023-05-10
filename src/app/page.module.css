@@ -227,3 +227,11 @@
     transform: rotate(0deg);
   }
 }
+
+
+/* tanishq css start here  */
+
+.signUp .btn{
+  background-color: #2670B7;
+  color: #fff;
+}

@@ -1,0 +1,141 @@
+.signUp .btn {
+  background-color: #2670b7;
+  color: #fff !important;
+}
+.signUp .btn:hover {
+  background-color: #2670b7;
+  color: #fff;
+}
+
+.logoSection {
+  background-color: #2670b7;
+  padding: 1em;
+  border-radius: 20px 0px 0px 20px;
+}
+.logoSections {
+  background-color: #2670b7;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.formSection {
+  background-color: rgba(38, 112, 183, 0.07);
+  /* height: 100vh; */
+  border-radius: 0px 20px 20px 0px;
+}
+
+.loginLogo {
+  text-align: center;
+  padding: 9em 0;
+}
+.nav-tabs {
+  padding: 0em 4em !important;
+}
+.loginLogo img {
+  width: 50%;
+}
+
+.padd {
+  padding: 0 !important;
+}
+.formSection .nav-item {
+  width: 50%;
+  text-align: center;
+}
+
+.formSection .nav-item .nav-link {
+  margin: auto !important;
+  color: #000;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: #ec6c30 !important;
+  border-bottom: 2px solid #ec6c30 !important;
+  font-weight: 600;
+}
+
+.tabSection {
+  padding: 5em 6em;
+}
+.tabSections {
+  padding: 1em 6em;
+}
+
+.forgot {
+  color: #000;
+  margin-top: 10px;
+}
+
+.forgot a {
+  color: #000;
+  font-size: 14px;
+}
+a {
+  color: #000 !important;
+  font-size: 14px !important;
+}
+
+.submitBtn .btn {
+  background-color: #2670b7;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.note {
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+.back {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  color: #fff !important;
+}
+
+.register {
+  background-color: #2670b7 !important;
+  color: #fff !important;
+  text-align: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
+.tabSections p {
+  margin-bottom: 5px !important;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .logoSections {
+    background-color: transparent !important;
+  }
+  .padd {
+    padding: 15px !important;
+  }
+  .logoSection {
+    border-radius: 20px;
+  }
+  .loginLogo {
+    text-align: center;
+    padding: 0 !important;
+  }
+  .loginLogo img {
+    width: 25%;
+  }
+  .tabSection {
+    padding: 1em 2em;
+  }
+  .formSection {
+    border-radius: 20px;
+  }
+  .tabSections {
+    padding: 1em 2em;
+  }
+  .registerSection{
+    margin-top: 2em;
+  }
+}
