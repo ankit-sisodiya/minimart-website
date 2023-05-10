@@ -1,20 +1,57 @@
 "use client"
-import Dropdown from 'react-bootstrap/Dropdown';
-
+import React from "react";
+import banner from '../assets/img/banner.png';
+import delivery from '../assets/img/delivery.png';
+import refund from '../assets/img/refund.png';
+import bestPrice from '../assets/img/bestPrice.png';
+import { BsEyeSlash } from "react-icons/bs";
 
 function Banner() {
   return (
-    <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
+    <div>
+      <div className="banner-section">
+        <img src={banner.src} alt="Banner" />
+      </div>
+      <div className="container">
+      <div className="banner-below">
+        <div className="row">
+                  <div className="col-md-4">
+                    <div className="banner-below-part">
+                      <div className="banner-below-image">
+                        <img src={refund.src} alt="Best-price"/>
+                      </div>
+                      <div className="banner-below-detail">
+                        <p>Best Prices & Deals</p>
+                        <span>Don't miss out daily amazing deals and prices</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="banner-below-part">
+                        <div className="banner-below-image">
+                          <img src={bestPrice.src} alt="Refundable"/>
+                        </div>
+                        <div className="banner-below-detail">
+                          <p>Refundable</p>
+                          <span>If your items have damage we agree to refund it</span>
+                        </div>
+                      </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="banner-below-part last-card">
+                        <div className="banner-below-image">
+                          <img src={delivery.src} alt="Free Delivery"/>
+                        </div>
+                        <div className="banner-below-detail">
+                          <p>Free Delivery</p>
+                          <span>Do purchase over $50 and get free delivery anywhere</span>
+                        </div>
+                      </div>
+                  </div>
+          </div>
+        </div>
+        </div>
+      </div>
   );
 }
 
