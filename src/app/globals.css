@@ -1,20 +1,40 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.header-top{
-   padding: 0.3rem 1.5rem;
-   background-color: #EC6C30;
-   color: #fff;
-   font-weight: 600;
-   font-size: 13px;
+/* /////////////////////////// HEADER CSS /////////////////////////// */
+
+.header-top {
+    padding: 0.3rem 1.5rem;
+    background-color: #EC6C30;
+    color: #fff;
+    font-weight: 600;
+    font-size: 13px;
 }
 
-.account-section span{
- display: flex;
- align-items: baseline;
+.header-top-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-container div {
+    width: 50%;
+}
+
+.header-top-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-right div {
+    margin: 0 12px;
+}
+
+.account-section span {
+    display: none;
+    align-items: baseline;
 }
 
 .has-search .form-control {
@@ -32,48 +52,427 @@ body{
     pointer-events: none;
 }
 
-.searchButton{
+.searchButton {
     border-radius: 0 !important;
     background-color: #2670B7 !important;
+    border-bottom-right-radius: 7px !important;
+    border-top-right-radius: 7px !important;
 }
 
-.header-center{
-    padding: 0.3rem 1.5rem;
+.header-center {
+    padding: 0.5rem 1.5rem;
 }
 
-.logo img{
+.logo img {
     object-fit: contain;
     width: 100%;
     height: 3.5em;
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     align-items: center;
 }
 
-.alignClass{
+.alignClass {
     align-items: center;
 }
 
-.header-bottom-navbar{
+.header-bottom {
+    background-color: #2670B7 !important;
+    padding: 0.3rem;
+}
+
+.header-bottom-navbar {
     background-color: #2670B7;
     justify-content: center;
     padding: 0.5rem;
 }
 
-.header-bottom-navbar a{
+.header-bottom-navbar a {
     margin: 0px 14px;
     padding: 5px 5px;
-    color: #fff !important  ;
- }
+    color: #fff;
+    font-size: 13px;
+}
 
- .header-bottom-navbar a:hover{
+.header-bottom-navbar a:hover {
     background-color: #fff;
     color: #2670B7;
- }
+}
 
- .header-bottom-navbar .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active{
-   background-color: #fff;
-   color: #2670B7 !important;
- }
+.header-bottom-navbar .navbar-nav .show>.nav-link,
+.navbar-nav .nav-link.active {
+    background-color: #fff;
+    color: #2670B7 !important;
+}
+
+.badge-options {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: baseline !important;
+}
+
+.hamburger-for-mob {
+    display: none;
+}
+
+.badge-options svg {
+    font-size: 26px;
+    margin-right: 4px;
+}
+
+.icon-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 50px;
+    color: #000;
+    outline: none;
+    background-color: #fff;
+    font-weight: 500;
+    border: none;
+}
+
+.icon-button:hover {
+    cursor: pointer;
+}
+
+.icon-button__badge {
+    position: absolute;
+    top: 5px;
+    right: 65px;
+    width: 18px;
+    height: 18px;
+    background: #2670B7;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+/* ////////////////////// FOOTER CSS ///////////////////////// */
+
+.footer {
+    background-color: #FFE1AD;
+}
+
+.footer-first-line {
+    padding: 0.3rem;
+    background-color: #fae7de;
+}
+
+.footer-second-line {
+    padding: 0.3rem;
+    background-color: #eb8658;
+}
+
+.footer-top {
+    padding: 2rem 0 1rem 0;
+    border-bottom: 1px solid #989898;
+}
+
+.footer-logo-part img {
+    height: 4em;
+    width: 48%;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.footer-contact-detail p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer-contact-detail span {
+    color: #2670B7;
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.footer-other-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.footer-right-section ul {
+    padding: 0;
+    font-size: 13px;
+}
+
+.footer-right-section li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.footer-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.copyright-section {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.visa-section img {
+    height: 2em;
+    width: 100%;
+    object-fit: contain;
+}
+
+.connect-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons {
+    margin: 0 10px;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #2670B7;
+    text-align: center;
+    color: #fff;
+}
+
+@media(max-width:767px) {
+    .account-section span {
+        display: block;
+        text-align: center;
+        height: 25px;
+        width: 27px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #EC6C30;
+        background-color: #fff;
+    }
+
+    .header-top {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .account-section {
+        margin-left: 0 !important;
+        text-align: start !important;
+    }
+
+    .header-top-left {
+        width: 48%;
+    }
+
+    .header-top-right {
+        width: 52%;
+    }
+
+    .header-center {
+        padding: 0.5rem 0;
+    }
+
+    .logo img {
+        margin-bottom: 1rem;
+    }
+
+    .search-bar {
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-for-mob {
+        display: none;
+    }
+
+    .sign-up-mob {
+        display: none;
+    }
+
+    .badge-options {
+        font-size: 23px;
+        font-weight: 900;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    .hamburger-for-mob {
+        display: block;
+    }
+
+    .logo-for-mob {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .mob-blue-nav {
+        background-color: #2670B7;
+        padding: 0;
+        padding: 0.5rem;
+        color: #fff !important;
+    }
+
+    .icon-button {
+        width:50px;
+        color: #fff;
+        background-color: #2670B7;
+    }
+
+    .icon-button:hover {
+        cursor: pointer;
+    }
+
+    .icon-button__badge {
+        position: absolute;
+        top: 5px;
+        right: 7px;
+        width: 18px;
+        height: 18px;
+        background: #ffffff;
+        color: #2670B7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 15px;
+    }
+
+
+    /* /////footer media queries ////// */
+
+    .footer-main-part {
+        padding: 0 2rem;
+    }
+
+    .footer-logo-part img {
+        width: 100%;
+    }
+
+    .footer-contact-detail p {
+        margin-bottom: 3px;
+    }
+
+    .footer-other-detail {
+        display: block;
+    }
+
+    .footer-bottom {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-bottom div {
+        margin: 20px 0;
+    }
+
+    .connect-section {
+        justify-content: space-around;
+    }
+
+    .social-icons {
+        margin: 0 !important;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .account-section span {
+        display: block;
+        text-align: center;
+        height: 25px;
+        width: 27px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #EC6C30;
+        background-color: #fff;
+    }
+
+    .header-bottom {
+        display: none;
+    }
+
+    .alignClass .col-md-6 {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .logo-for-mob {
+        width: 100% !important;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between !important;
+        align-items: baseline;
+    }
+
+    .hamburger-for-mob {
+        display: block;
+    }
+
+    .search-column {
+        width: 100% !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .mob-blue-nav {
+        background-color: #2670B7 !important;
+        color: #fff !important;
+        padding: 0 !important;
+    }
+
+    .header-center {
+        padding: 0.5rem 0 !important;
+    }
+
+    .sign-up-mob {
+        display: none;
+    }
+
+    .badge-options {
+        padding: 0.5rem;
+        justify-content: space-around;
+    }
+
+    .icon-button {
+        width:100px;
+        color: #fff;
+        background-color: #2670B7;
+    }
+
+    .icon-button:hover {
+        cursor: pointer;
+    }
+
+    .icon-button__badge {
+        position: absolute;
+        top: 5px;
+        right: 61px;
+        width: 19px;
+        height: 19px;
+        background: #ffffff;
+        color: #2670B7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 16px;
+    }
+    .badge-options svg {
+        font-size: 30px;
+        margin-right: 4px;
+    }
+}
