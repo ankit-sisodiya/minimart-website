@@ -97,36 +97,6 @@ const Header = ({ direction, ...args }) => {
           </div>
         </div>
       </div>
-      <div className="col-md-6">
-        <div className="row">
-          <div className="col-md-3">
-            <span>
-              <FaRegHeart /> Wishlist
-            </span>
-          </div>
-          <div className="col-md-3">
-            <div className="dropdown">
-              <span>
-                <BsCart /> My Cart
-              </span>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="dropdown">
-              <span>
-                <GoLocation /> Location
-              </span>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="signUp button">
-              <Link href="/login" className="btn btn-group">
-                Login
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
       <div className="header-bottom">
         <div className="container">
           <div className="col-md-10 p-0">
