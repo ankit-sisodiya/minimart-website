@@ -309,7 +309,7 @@ body {
     border-bottom-right-radius: 50px;
     border-top-left-radius: 50px;
     padding: 1rem;
-    background-color: #f0f5fa;
+    background-color: #E9F1F8;
 }
 
 .card-background span{
@@ -351,12 +351,106 @@ body {
 }
 
 .categorySlider .react-multiple-carousel__arrow{
-    background-color: #f0f5fa;
+    background-color: #E9F1F8;
     color: #000 !important;
 }
 
 .categorySlider .react-multiple-carousel__arrow::before{
     color: #000 !important;
+}
+
+/* ///////////// second banner style ///////////////// */
+
+.sb-third{
+    height: 16.2em;
+}
+
+.sb-fourth{
+    height: 15.7em;
+}
+
+/* ///////////   third banner style   ////////// */
+.thirdBanner-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.thirdBanner-section img{
+    width: 100%;
+    height: 16em;
+    object-fit: contain;
+}
+
+
+/* ///////// double slider styles /////// */
+
+.product-sidebar{
+    border: 2px solid #E9F1F8;
+    text-align: center;
+}
+.sidebar-heading{
+    background-color: #E9F1F8;
+    padding: 5px;
+}
+.sidebar-heading h2{
+    font-size: 17px;
+    font-weight: 700;
+}
+.sidebar-below-products{
+    padding: 0 15px;
+}
+.product-detail{
+    border-bottom:2px solid #E9F1F8;
+    margin: 5px 0;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.product-description{
+    text-align: start;
+}
+.product-description p{
+    margin: 0;
+    font-weight: 800;
+    font-size: 14px;
+}
+.product-description span{
+    font-weight: 800;
+    color: #2670B7;
+}
+.product-description button {
+    background-color: #2670B7;
+    color: #fff;
+    border: none;
+    font-size: 11px;
+    display: block;
+    padding: 3px 15px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+.card-boxes{
+    padding: 0.5rem;
+}
+.double-slider-section .nav-tabs{
+    justify-content: start;
+    padding-left: 0.5rem !important;
+}
+.double-slider-section .nav-tabs .nav-item .nav-link{
+    color: #000 !important;
+    font-weight: 900 !important;
+}
+.double-slider-section .nav-tabs .nav-item .nav-link:hover{
+    border: none !important;
+}
+.double-slider-section .nav-tabs .nav-item .nav-link.active{
+    color: #000 !important;
+    border: 1px solid #b4b5ba !important;
+    border-bottom: 0 !important;
+    border-top: 3px solid #EC6C30 !important;
+    border-radius: 0 !important;
+}
+.tab-section-container .slick-arrow{
+    border: 2px solid red !important;
+    background-color: #000 !important;
 }
 
 @media(max-width:767px) {
@@ -522,6 +616,21 @@ body {
     
     .banner-below-image img{
         height: 2em;
+    }
+
+
+    /* ////////// second banner media query //////// */
+
+    /* ///////// third banner media query ///////// */
+    .thirdBanner-section{
+        display: block;
+    }
+    
+    .thirdBanner-section img{
+        width: 100%;
+        height: 10em;
+        object-fit: contain;
+        margin: 10px 0;
     }
 }
 
