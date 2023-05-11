@@ -125,14 +125,14 @@ const Header = ({ direction, ...args }) => {
                       <BiHomeAlt /> Home
                     </span>
                   </a>
-                  <a
+                  <Link
                     className="nav-item nav-link col-md-2 text-center"
-                    href="/"
+                    href="/category"
                   >
                     <span className="nav-for-web">
                       <BiCategory /> Categories
                     </span>
-                  </a>
+                  </Link>
                   <a
                     className="nav-item nav-link col-md-2 text-center"
                     href="/"
