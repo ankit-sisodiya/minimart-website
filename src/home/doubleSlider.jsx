@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { Tab, Tabs } from "react-bootstrap/";
 import product1 from "../assets/img/product1.png";
 import { BsHeart, BsStar } from "react-icons/bs";
-import ProductImg from "../assets/img/product/product.png";
 import Form from "react-bootstrap/Form";
 
 const DoubleSlider = () => {
@@ -20,11 +19,36 @@ const DoubleSlider = () => {
     slidesToScroll: 4,
     rows: 2,
     arrow: true,
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          rows: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 1,
+          dots: false,
+        }
+      }
+    ]
   };
 
   return (
     <div>
       <div className="double-slider-section">
+        <div className="ds-heading">
+          <h2>Trending Products</h2>
+        </div>
         <div className="row">
           <div className="col-md-3">
             <div className="product-sidebar">
@@ -102,10 +126,24 @@ const DoubleSlider = () => {
                     </div>
                   </div>
                 </div>
+                <div className="product-detail">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <img src={product1.src} alt="" />
+                    </div>
+                    <div className="col-md-8">
+                      <div className="product-description">
+                        <p>Uttapam</p>
+                        <span> AED 13.00</span>
+                        <button>Add To Cart</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-9 tab-contents">
             <Tabs
               id="controlled-tab-example"
               activeKey={key}
@@ -117,454 +155,212 @@ const DoubleSlider = () => {
                 <div className="tab-section-container">
                   <Slider {...settings}>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
                         </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
-                        </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </Slider>
                 </div>
@@ -572,455 +368,213 @@ const DoubleSlider = () => {
               <Tab eventKey="profile" title="Latest">
                 <div className="tab-section-container">
                 <Slider {...settings}>
-                    <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
                         </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={ProductImg.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
-                        </div>
-                        <div className="cardDetail">
-                          <img src={ProductImg.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </Slider>
                 </div>
@@ -1028,455 +582,265 @@ const DoubleSlider = () => {
               <Tab eventKey="contact" title="Bestseller">
                 <div className="tab-section-container">
                   <Slider {...settings}>
-                    <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                  <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={product1.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={product1.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                      <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                        <div className="cardDetail">
-                          <img src={product1.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={product1.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={product1.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
                         </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={product1.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={product1.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={product1.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                            <div className="offer">
-                            <span>Best Deal</span>
-                            <button className="btn btn-group">
-                                <BsHeart />
-                            </button>
-                            </div>
-                            <div className="cardDetail">
-                            <img src={product1.src} />
-                            <h5>Grapes Red Flame</h5>
-                            <div className="priceDetail">
-                                <p>
-                                AED 35.00 &nbsp;<span>38.00</span>
-                                </p>
-                                <div className="starRating">
-                                <BsStar
-                                    style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                                />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                <BsStar />
-                                </div>
-                            </div>
-                            <div className="cardBtn">
-                                <div className="row">
-                                <div className="col-md-6">
-                                    <button className="btn btn-group addCart">
-                                    Add to Cart
-                                    </button>
-                                </div>
-                                <div className="col-md-6">
-                                    <Form.Select aria-label="Default select example">
-                                    <option>1 Kg/Unit</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                    </Form.Select>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-boxes">
-                        <div className="listingCard">
-                        <div className="offer">
-                          <span>Best Deal</span>
-                          <button className="btn btn-group">
-                            <BsHeart />
-                          </button>
-                        </div>
-                        <div className="cardDetail">
-                          <img src={product1.src} />
-                          <h5>Grapes Red Flame</h5>
-                          <div className="priceDetail">
-                            <p>
-                              AED 35.00 &nbsp;<span>38.00</span>
-                            </p>
-                            <div className="starRating">
-                              <BsStar
-                                style={{ color: "#FFCE00", fill: "#FFCE00" }}
-                              />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                              <BsStar />
-                            </div>
-                          </div>
-                          <div className="cardBtn">
-                            <div className="row">
-                              <div className="col-md-6">
-                                <button className="btn btn-group addCart">
-                                  Add to Cart
-                                </button>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
                               </div>
-                              <div className="col-md-6">
-                                <Form.Select aria-label="Default select example">
-                                  <option>1 Kg/Unit</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </Form.Select>
-                              </div>
-                            </div>
                           </div>
                         </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
                         </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="card-boxes">
+                      <div className="card-section">
+                        <div className="card-offer-part">
+                          <span className="offer-deal">Best deal</span>
+                          <span className="pi-icon"><BsHeart/></span>
+                        </div>
+                        <div className="card-image-part">
+                          <img src={product1.src} alt="Product Image" />
+                        </div>
+                        <div className="product-image-detail">
+                          <p className="pi-name">Aloo Sev</p>
+                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
+                          <div className="cartButtons">
+                              <button>Add to Cart</button>
+                              <div className="pi-dropdown">
+                                  <Form.Select aria-label="Default select example">
+                                      <option>1 Kg/Unit</option>
+                                      <option value="1">One</option>
+                                      <option value="2">Two</option>
+                                      <option value="3">Three</option>
+                                  </Form.Select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </Slider>
                 </div>
