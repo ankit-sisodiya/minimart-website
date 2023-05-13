@@ -4,9 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import brand from "../assets/img/BrandImage.png";
-import { BsHeart} from "react-icons/bs";
-import ProductImg from "../assets/img/product/product.png";
-import Form from "react-bootstrap/Form";
 
 const ShopByBrand = () => {
     const settings = {

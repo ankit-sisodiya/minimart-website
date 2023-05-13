@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Tab, Tabs } from "react-bootstrap/";
 import product1 from "../assets/img/product1.png";
-import { BsHeart, BsStar } from "react-icons/bs";
+import { BsHeart } from "react-icons/bs";
 import Form from "react-bootstrap/Form";
 
 const DoubleSlider = () => {

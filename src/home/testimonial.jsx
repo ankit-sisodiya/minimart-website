@@ -1,42 +1,188 @@
 "use client";
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useEffect, useRef } from "react";
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import userImage from '../assets/img/user-profile.png'
+import { BsStar } from "react-icons/bs";
 
-const Testimonial = () => {
+const Testimonial = ({ cards }) => {
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    rows: 2,
-    arrow:true,
+    centerMode: true,
+  centerPadding: '0px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
   };
 
   return (
     <div>
-      <div className="testimonial-section">
-        <Slider {...settings}>
-          <div>hello1</div>
-          <div>hello2</div>
-          <div>hello3</div>
-          <div>hello4</div>
-          <div>hello5</div>
-          <div>hello6</div>
-          <div>hello7</div>
-          <div>hello8</div>
-          <div>hello1</div>
-          <div>hello2</div>
-          <div>hello3</div>
-          <div>hello4</div>
-          <div>hello5</div>
-          <div>hello6</div>
-          <div>hello7</div>
-          <div>hello8</div>
-        </Slider>
-      </div>
+        <div className="sliderContainer">
+          <div className="testimonial-heading">
+            <h2>What Our Customers Are Saying</h2>
+          </div>
+              <Slider {...settings}>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div className="slide">
+                    <div className="testimonial-cards">
+                        <div className="testimonial-profile-section">
+                          <img src={userImage.src} alt="user-profile"/>
+                          <p className="user-name">Shivam Bagora1</p>
+                        </div>
+                      <div className="user-comment-section">
+                          <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam adipisci. Quibusdam at officiis eaque accusantium nisi, hic atque magni veritatis molestias voluptatem quaerat dicta itaque blanditiis soluta magnam, eos qui quas minus explicabo placeat.
+                          </p>
+                          <div className="testimonial-starRating">
+                            <BsStar style={{ color: "#FFCE00", fill: "#FFCE00" }} />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                            <BsStar />
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </Slider>
+            </div>
+
     </div>
   );
 };

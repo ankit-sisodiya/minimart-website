@@ -5,7 +5,7 @@ import thirdBanner2 from '../assets/img/thirdBanner2.png'
 const Banner3 = () => {
   return (
     <div>
-      <div className="thirdBanner my-4">
+      <div className="thirdBanner">
         <div className="row">
             <div className="thirdBanner-section">
                 <div className="col-md-6">
