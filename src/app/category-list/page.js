@@ -4,7 +4,7 @@ import CardList from "./card-list";
 
 function page() {
   return (
-    <div className="container">
+    <div className="container mt-4">
       <div className="row">
         <div className="col-md-3">
           <SideFilter />
