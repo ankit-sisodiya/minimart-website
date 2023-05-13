@@ -74,10 +74,10 @@ const Header = ({ direction, ...args }) => {
                 </button>
                 <button type="button" className="icon-button">
                   <span className="icon-button__badge">2</span>
-                  <span>
+                  <Link href="/cart"><span>
                     <BsCart />
                     <span className="nav-for-mob">My Cart</span>
-                  </span>
+                  </span></Link>
                 </button>
                 <div>
                   <span>
