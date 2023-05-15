@@ -595,6 +595,107 @@ img {
   margin-bottom: 0rem;
 }
 
-.cartSimilar{
+.cartSimilar {
+  margin: 4em 0;
+}
+.addressTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topD {
+  display: flex;
+}
+
+.add {
+  padding: 4px 2em !important;
+}
+
+.home {
+  padding: 2px 0px !important;
+  margin-left: 2em;
+  font-size: 12px !important;
+}
+
+.topD h5 {
+  color: #2670b7;
+  font-weight: 600;
+}
+
+.addressTop h4 {
+  font-weight: 600;
+}
+
+.AddDetail p {
+  margin-bottom: 0px;
+  color: #787878;
+  font-size: 16px;
+}
+
+.addressDetail {
+  border: 1px solid #2670b7;
+  border-radius: 10px;
+  padding: 1em;
+}
+.addressSection {
+  padding: 1em;
+  border-radius: 10px;
+  background: rgba(38, 112, 183, 0.1);
+  margin-top: 1em;
+}
+
+.AddDetail {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1em;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.editAddBtn {
+  background-color: #fff !important;
+  border-radius: 100px !important;
+  border: 1px solid #2670b7 !important;
+  padding: 15px !important;
+}
+
+.addressBtn {
+  display: inline-grid;
+}
+
+.MainHead h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.footer-right-section a {
+  text-decoration: none;
+}
+
+.my {
+  color: #ec6c30;
+}
+.aboutHead h5 {
+  color: #2670b7;
+  font-weight: 600;
+}
+
+.aboutHead span {
+  font-weight: 600;
+}
+.aboutHead {
+  text-align: center;
+}
+.about {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.about p {
+  margin-top: 1em;
+}
+
+.aboutSection .banner-below {
+  top: 0 !important;
   margin: 4em 0;
 }

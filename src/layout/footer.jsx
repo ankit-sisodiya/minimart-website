@@ -6,6 +6,7 @@ import { IoIosCall } from 'react-icons/io';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsInstagram,BsTwitter } from 'react-icons/bs';
 import { FaFacebookF, FaLinkedinIn} from 'react-icons/fa';
+import Link from 'next/link';
 
 const footer = () => {
   return (
@@ -50,7 +51,7 @@ const footer = () => {
                       <div className="footer-right-section">
                           <p className="footer-heading">Useful links</p>
                             <ul>
-                              <li>About Us</li>
+                              <li><Link href='/about'>About Us</Link></li>
                               <li>Contact</li>
                               <li>Hot deals</li>
                               <li>Promotions</li>

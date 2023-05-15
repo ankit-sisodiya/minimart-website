@@ -67,17 +67,21 @@ const Header = ({ direction, ...args }) => {
               <div className="badge-options">
                 <button type="button" className="icon-button">
                   <span className="icon-button__badge">2</span>
-                  <span>
-                    <FaRegHeart />
-                    <span className="nav-for-mob">Wishlist</span>
-                  </span>
+                  <Link href="/wishlist">
+                    <span>
+                      <FaRegHeart />
+                      <span className="nav-for-mob">Wishlist</span>
+                    </span>
+                  </Link>
                 </button>
                 <button type="button" className="icon-button">
                   <span className="icon-button__badge">2</span>
-                  <Link href="/cart"><span>
-                    <BsCart />
-                    <span className="nav-for-mob">My Cart</span>
-                  </span></Link>
+                  <Link href="/cart">
+                    <span>
+                      <BsCart />
+                      <span className="nav-for-mob">My Cart</span>
+                    </span>
+                  </Link>
                 </button>
                 <div>
                   <span>
@@ -133,14 +137,14 @@ const Header = ({ direction, ...args }) => {
                       <BiCategory /> Categories
                     </span>
                   </Link>
-                  <a
+                  <Link
                     className="nav-item nav-link col-md-2 text-center"
-                    href="/"
+                    href="/hot-deal"
                   >
                     <span className="nav-for-web">
                       <BsFire /> Hot deals
                     </span>
-                  </a>
+                  </Link>
                   <a
                     className="nav-item nav-link col-md-2 text-center"
                     href="/"
@@ -149,14 +153,14 @@ const Header = ({ direction, ...args }) => {
                       <FaPercentage /> Promotions
                     </span>
                   </a>
-                  <a
+                  <Link
                     className="nav-item nav-link col-md-2 text-center"
-                    href="/"
+                    href="/new-product"
                   >
                     <span className="nav-for-web">
                       <MdOutlineProductionQuantityLimits /> New Product
                     </span>
-                  </a>
+                  </Link>
                   <a
                     className="nav-item nav-link col-md-2 text-center"
                     href="/"

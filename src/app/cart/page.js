@@ -7,7 +7,7 @@ function page() {
   return (
     <div>
       <div className="pageHead">
-        <h3>My Cart</h3>
+        <h3>My Cart</h3>  
       </div>
       <Mycart />
       <Banner/>

@@ -1,9 +1,10 @@
 import React from 'react'
+import AboutUs from './aboutUs'
 
 function Page() {
   return (
-    <div>
-      <h1>About Page</h1>
+    <div className='container mt-4'>
+      <AboutUs/>
     </div>
   )
 }
