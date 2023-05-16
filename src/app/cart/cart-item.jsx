@@ -3,7 +3,7 @@ import CartImage from "../../assets/img/cart/cart.png";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
-
+import Link from "next/link";
 function CartItem() {
   return (
     <div className="cartItem">
