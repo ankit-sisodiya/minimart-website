@@ -41,6 +41,7 @@ const Sliders = () => {
           slidesToScroll: 1,
           rows: 1,
           dots: false,
+          arrow: false,
         }
       }
     ]

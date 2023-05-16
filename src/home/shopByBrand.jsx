@@ -7,7 +7,7 @@ import brand from "../assets/img/BrandImage.png";
 
 const ShopByBrand = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 8,
@@ -22,7 +22,7 @@ const ShopByBrand = () => {
               slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
-              dots: true,
+              dots: false,
               rows: 2
             }
           },

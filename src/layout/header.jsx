@@ -8,8 +8,11 @@ import { BiHomeAlt, BiCategory } from "react-icons/bi";
 import { BsFire, BsQrCodeScan } from "react-icons/bs";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import Link from "next/link";
+import { HiMenu } from "react-icons/hi";
 
 const Header = ({ direction, ...args }) => {
+  const [menu, setMenu] = useState(false);
+
   return (
     <>
       <div className="header-top">
@@ -39,7 +42,15 @@ const Header = ({ direction, ...args }) => {
                     <img src={Logo.src} alt="logo" />
                   </div>
                   <div className="hamburger-for-mob">
-                    <button> menu </button>
+                    <button
+                      className="btn btn-group"
+                      onClick={() => {
+                        setMenu(!menu);
+                      }}
+                    >
+                      {" "}
+                      <HiMenu style={{ color: menu ? "#fff" : "#000" }} />{" "}
+                    </button>
                   </div>
                 </div>
                 <div className="col-md-8 search-column">
@@ -105,17 +116,6 @@ const Header = ({ direction, ...args }) => {
         <div className="container">
           <div className="col-md-10 p-0">
             <nav className="navbar navbar-expand-lg navbar-light bg-light p-0">
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
               <div
                 className="collapse navbar-collapse header-bottom-navbar"
                 id="navbarNavAltMarkup"
@@ -174,6 +174,18 @@ const Header = ({ direction, ...args }) => {
             </nav>
           </div>
         </div>
+      </div>
+
+      <div className={`${menu ? " menuOpen" : " menuClose"}`}>
+        {menu ? (
+          <div className="mobileMenu">
+            <div className="text">
+              <h1>Hello</h1>
+            </div>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </>
   );
