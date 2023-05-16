@@ -1,4 +1,4 @@
-import Sliders from "@app/home/Slider";
+import Sliders from ".app/home/Slider";
 import styles from "./page.module.css"
 import Banner from "@app/home/banner";
 import RecentlyViews from "@app/home/recentlyViews";
