@@ -9,7 +9,7 @@ import Form from "react-bootstrap/Form";
 
 const RecentlyViews = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
@@ -24,7 +24,7 @@ const RecentlyViews = () => {
               slidesToShow: 2,
               slidesToScroll: 1,
               infinite: true,
-              dots: true,
+              dots: false,
               rows: 2
             }
           },

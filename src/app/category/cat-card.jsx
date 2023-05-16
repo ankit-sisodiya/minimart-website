@@ -30,9 +30,9 @@ function CatCard() {
           {categorydata.map((x, i) => {
             return (
               <div key={i} className="col-md-4 mb-5">
-                <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
+                <div className="flip-card">
+                  <div className="flip-card-inner">
+                    <div className="flip-card-front">
                       <div className="mainCard">
                         <img src={CAT.src} />
                         <div className="cardHead">
@@ -40,7 +40,7 @@ function CatCard() {
                         </div>
                       </div>
                     </div>
-                    <div class="flip-card-back">
+                    <div className="flip-card-back">
                       <div className="row">
                         {subCategory.map((d, index) => {
                           return (

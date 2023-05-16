@@ -3,7 +3,7 @@ import CartImage from "../../assets/img/cart/cart.png";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
-
+import Link from "next/link";
 function CartItem() {
   return (
     <div className="cartItem">
@@ -47,7 +47,7 @@ function CartItem() {
                   </div>
                   <div className="soldText">
                     <h4>
-                      Sold By <a href="#">MyMarket</a>
+                      Sold By <Link href="/">MyMarket</Link>
                     </h4>
                   </div>
                   <div className="editSection">
@@ -103,7 +103,7 @@ function CartItem() {
                   </div>
                   <div className="soldText">
                     <h4>
-                      Sold By <a href="#">MyMarket</a>
+                      Sold By <Link href="#">MyMarket</Link>
                     </h4>
                   </div>
                   <div className="editSection">
