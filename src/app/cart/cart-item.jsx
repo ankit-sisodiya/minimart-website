@@ -47,7 +47,7 @@ function CartItem() {
                   </div>
                   <div className="soldText">
                     <h4>
-                      Sold By <a href="#">MyMarket</a>
+                      Sold By <Link href="/">MyMarket</Link>
                     </h4>
                   </div>
                   <div className="editSection">
@@ -103,7 +103,7 @@ function CartItem() {
                   </div>
                   <div className="soldText">
                     <h4>
-                      Sold By <a href="#">MyMarket</a>
+                      Sold By <Link href="#">MyMarket</Link>
                     </h4>
                   </div>
                   <div className="editSection">

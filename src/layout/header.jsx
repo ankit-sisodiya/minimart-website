@@ -121,14 +121,14 @@ const Header = ({ direction, ...args }) => {
                 id="navbarNavAltMarkup"
               >
                 <div className="navbar-nav">
-                  <a
+                  <Link
                     className="nav-item nav-link active col-md-2 text-center"
                     href="/"
                   >
                     <span className="nav-for-web">
                       <BiHomeAlt /> Home
                     </span>
-                  </a>
+                  </Link>
                   <Link
                     className="nav-item nav-link col-md-2 text-center"
                     href="/category"
@@ -145,14 +145,14 @@ const Header = ({ direction, ...args }) => {
                       <BsFire /> Hot deals
                     </span>
                   </Link>
-                  <a
+                  <Link
                     className="nav-item nav-link col-md-2 text-center"
                     href="/"
                   >
                     <span className="nav-for-web">
                       <FaPercentage /> Promotions
                     </span>
-                  </a>
+                  </Link>
                   <Link
                     className="nav-item nav-link col-md-2 text-center"
                     href="/new-product"
@@ -161,14 +161,14 @@ const Header = ({ direction, ...args }) => {
                       <MdOutlineProductionQuantityLimits /> New Product
                     </span>
                   </Link>
-                  <a
+                  <Link
                     className="nav-item nav-link col-md-2 text-center"
                     href="/"
                   >
                     <span className="nav-for-web">
                       <BsQrCodeScan /> Scan QR Code
                     </span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </nav>
