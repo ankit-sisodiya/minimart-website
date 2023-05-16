@@ -1,3 +1,4 @@
+"use client"
 import Sliders from "@app/home/Slider";
 import styles from "./page.module.css"
 import Banner from "@app/home/banner";

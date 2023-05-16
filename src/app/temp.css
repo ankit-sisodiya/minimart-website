@@ -699,3 +699,18 @@ img {
   top: 0 !important;
   margin: 4em 0;
 }
+
+
+.listing a{
+  text-decoration: none !important;
+}
+.hamburger-for-mob svg{
+  font-size: 24px !important;
+}
+
+.mobShow{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
