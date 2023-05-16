@@ -1299,7 +1299,14 @@ body {
     .banner-below-image img {
         height: 2em;
     }
-
+    .second-banner-right img {
+        height: 7.5em;
+    }
+    .second-banner-left img{
+        background-color: currentColor;
+        height: 14.5em;
+        object-fit: contain;
+    }
 
     /* ////////// second banner media query //////// */
     .categorySlider .slick-next {
@@ -1461,6 +1468,10 @@ body {
 
     .pd-description p {
         text-align: justify;
+    }
+
+    .flip-card-back .col-md-6{
+        width: 50% !important;
     }
 }
 

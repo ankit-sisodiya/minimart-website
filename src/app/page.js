@@ -1,6 +1,12 @@
+<<<<<<< Updated upstream
 "use client"
 import Sliders from "@app/home/Slider";
 import styles from "./page.module.css"
+=======
+"Use Client";
+import Sliders from "@app/home/slider.jsx";
+import styles from "./page.module.css";
+>>>>>>> Stashed changes
 import Banner from "@app/home/banner";
 import RecentlyViews from "@app/home/recentlyViews";
 import ShopByBrand from "@app/home/shopByBrand";
@@ -13,32 +19,44 @@ import Testimonial from "@app/home/testimonial";
 export default function Home() {
   return (
     <main className={styles.main}>
-             <Banner />
+      <Banner />
       <div className="container">
-           <div className="my-5">
-                <Sliders/>
-            </div>
-           <div className="my-5">
-            <DoubleSlider/>
-           </div>
-           <div className="my-5">
-               <Banner2/>
-           </div>
-           <div className="my-5">
-               <SpecialProducts/>
-           </div>
-           <div className="my-5">
-              <RecentlyViews/>
-           </div>
-           <div className="my-5">
-               <Banner3/>
-           </div>
-           <div className="my-5">
-               <ShopByBrand/>
-           </div>
-           <div className="my-5">
-              <Testimonial/>
-           </div>
+        <div className="my-4">
+          <Sliders />
+        </div>
+      </div>
+      <div className="container">
+        <div className="my-4">
+          <DoubleSlider />
+        </div>
+      </div>
+      <div className="container">
+        <div className="my-4">
+          <Banner2 />
+        </div>
+      </div>
+      <div className="container">
+        <div className="my-4">
+          <SpecialProducts />
+        </div>
+      </div>
+      <div className="container">
+        <div className="my-4">
+          <RecentlyViews />
+        </div>
+      </div>
+      <div className="my-4">
+        <Banner3 />
+      </div>
+      <div className="container">
+        <div className="my-4">
+          <ShopByBrand />
+        </div>
+      </div>
+      <div className="container">
+        <div className="my-4">
+          <Testimonial />
+        </div>
       </div>
     </main>
   );
