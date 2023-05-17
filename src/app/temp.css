@@ -231,6 +231,24 @@ a {
 }
 
 @media (max-width: 768px) {
+  .badge-options svg{
+    color: #fff !important;
+  }
+  .mobileMenu .navbar-nav{
+    padding: 4em 4em 4em 1em;
+  }
+  .mobileMenu .navbar-nav .nav-item{
+    text-align: left !important;
+    padding-left: 1em !important;
+  }
+  .mobileMenu .navbar-nav .active .nav-for-web{
+    color: #000 !important;
+  }
+  .mobileMenu .navbar-nav .nav-for-web{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff !important;
+  }
   .cartImage img{
     width: 25% !important;
   }
@@ -717,3 +735,6 @@ img {
   top: 0;
 }
 
+.nav-for-mob{
+  text-decoration: none !important;
+}

@@ -39,7 +39,9 @@ const Header = ({ direction, ...args }) => {
               <div className="row alignClass">
                 <div className="col-md-4 logo-for-mob">
                   <div className="logo">
-                    <img src={Logo.src} alt="logo" />
+                    <Link href="/">
+                      <img src={Logo.src} alt="logo" />
+                    </Link>
                   </div>
                   <div className="hamburger-for-mob">
                     <button
@@ -179,8 +181,73 @@ const Header = ({ direction, ...args }) => {
       <div className={`${menu ? " menuOpen" : " menuClose"}`}>
         {menu ? (
           <div className="mobileMenu">
-            <div className="text">
-              <h1>Hello</h1>
+            <div className="navbar-nav">
+              <Link
+                className="nav-item nav-link active col-md-2 text-center"
+                href="/"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                <span className="nav-for-web">
+                  <BiHomeAlt /> Home
+                </span>
+              </Link>
+              <Link
+                className="nav-item nav-link col-md-2 text-center"
+                href="/category"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                <span className="nav-for-web">
+                  <BiCategory /> Categories
+                </span>
+              </Link>
+              <Link
+                className="nav-item nav-link col-md-2 text-center"
+                href="/hot-deal"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                <span className="nav-for-web">
+                  <BsFire /> Hot deals
+                </span>
+              </Link>
+              <Link
+                className="nav-item nav-link col-md-2 text-center"
+                href="/"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                <span className="nav-for-web">
+                  <FaPercentage /> Promotions
+                </span>
+              </Link>
+              <Link
+                className="nav-item nav-link col-md-2 text-center"
+                href="/new-product"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                <span className="nav-for-web">
+                  <MdOutlineProductionQuantityLimits /> New Product
+                </span>
+              </Link>
+              <Link
+                className="nav-item nav-link col-md-2 text-center"
+                href="/"
+                onClick={() => {
+                  setMenu(false);
+                }}
+              >
+                <span className="nav-for-web">
+                  <BsQrCodeScan /> Scan QR Code
+                </span>
+              </Link>
             </div>
           </div>
         ) : (
