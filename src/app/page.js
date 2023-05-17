@@ -1,12 +1,6 @@
-<<<<<<< Updated upstream
-"use client"
-import Sliders from "@app/home/Slider";
-import styles from "./page.module.css"
-=======
 "Use Client";
 import Sliders from "@app/home/slider.jsx";
 import styles from "./page.module.css";
->>>>>>> Stashed changes
 import Banner from "@app/home/banner";
 import RecentlyViews from "@app/home/recentlyViews";
 import ShopByBrand from "@app/home/shopByBrand";

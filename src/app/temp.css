@@ -231,6 +231,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .cartImage img{
+    width: 25% !important;
+  }
   .logoSections {
     background-color: transparent !important;
   }

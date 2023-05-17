@@ -9,7 +9,8 @@ function page() {
     <div className="mt-4">
       <NewproductBanner />
       <New />
-      <Sliders/>
+      <div className="container"><Sliders/></div>
+
     </div>
   );
 }
