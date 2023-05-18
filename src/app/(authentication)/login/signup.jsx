@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import LoginLogo from "../../assets/img/signupLogo.png";
+import LoginLogo from "@app/assets/img/signupLogo.png";
 import Form from "react-bootstrap/Form";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
