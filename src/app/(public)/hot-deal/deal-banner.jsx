@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from "../../assets/img/hotBanner.png"
+import Banner from "@app/assets/img/hotBanner.png"
 
 function DealBanner() {
   return (

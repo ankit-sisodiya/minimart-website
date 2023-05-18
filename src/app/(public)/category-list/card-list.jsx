@@ -1,9 +1,6 @@
 "use client";
 import React from "react";
-import Banner from "../../assets/img/banner2.png";
-import { BsHeart, BsStar } from "react-icons/bs";
-import ProductImg from "../../assets/img/product/product.png";
-import Form from "react-bootstrap/Form";
+import Banner from "@app/assets/img/banner2.png";
 import CommonCard from "@app/components/common-card";
 import Link from "next/link";
 

@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import delivery from "../../assets/img/delivery.png";
-import refund from "../../assets/img/refund.png";
-import bestPrice from "../../assets/img/bestPrice.png";
+import delivery from "@app/assets/img/delivery.png";
+import refund from "@app/assets/img/refund.png";
+import bestPrice from "@app/assets/img/bestPrice.png";
 
 function AboutUs() {
   return (

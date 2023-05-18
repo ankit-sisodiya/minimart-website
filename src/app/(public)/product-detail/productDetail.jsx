@@ -2,10 +2,10 @@
 import React from 'react';
 import { BsHeart, BsShare, BsFillEyeFill } from "react-icons/bs";
 import Form from "react-bootstrap/Form";
-import productDetail from '../../assets/img/productDetail.png';
-import productImageA from '../../assets/img/pda.png';
-import productImageB from '../../assets/img/pdb.png';
-import productImageC from '../../assets/img/pdc.png';
+import productDetail from '@app/assets/img/productDetail.png';
+import productImageA from '@app/assets/img/pda.png';
+import productImageB from '@app/assets/img/pdb.png';
+import productImageC from '@app/assets/img/pdc.png';
 
 const ProductDetail = () => {
   return (

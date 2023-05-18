@@ -1,5 +1,5 @@
 import React from "react";
-import CAT from "../../assets/img/category/cat.png";
+import CAT from "@app/assets/img/category/cat.png";
 import Link from "next/link";
 
 function CatCard() {

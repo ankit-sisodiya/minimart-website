@@ -1,6 +1,6 @@
 import React from "react";
-import Banner1 from "../../assets/img/thirdBanner1.png";
-import Banner2 from "../../assets/img/thirdBanner2.png";
+import Banner1 from "@app/assets/img/thirdBanner1.png";
+import Banner2 from "@app/assets/img/thirdBanner2.png";
 
 function Banner() {
   return (

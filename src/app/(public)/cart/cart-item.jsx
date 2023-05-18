@@ -1,5 +1,5 @@
 import React from "react";
-import CartImage from "../../assets/img/cart/cart.png";
+import CartImage from "@app/assets/img/cart/cart.png";
 import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
