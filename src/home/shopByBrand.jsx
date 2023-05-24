@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import brand from "../assets/img/BrandImage.png";
+import Image from 'next/image';
 
 const ShopByBrand = () => {
     const settings = {
@@ -47,76 +48,76 @@ const ShopByBrand = () => {
             <div className="brand-slider-part">
                 <Slider {...settings}>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                     <div className="brand-images">
-                        <img src={brand.src} alt="Brand Image" />
+                        <Image src={brand.src} alt="Brand Image" height={100} width={100} />
                     </div>
                 </Slider>
             </div>

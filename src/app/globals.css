@@ -377,7 +377,7 @@ body {
 .thirdBanner {
   background-color: #fffae7;
   padding: 2rem 4rem;
-  margin: 5rem 0;
+  margin: 1rem 0;
 }
 
 .thirdBanner-section {
@@ -848,7 +848,7 @@ body {
 .slick-current .testimonial-cards {
   transform: scale(1.2) !important;
   background-color: #fff !important;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .sliderContainer .slick-list {

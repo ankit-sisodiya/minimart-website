@@ -12,10 +12,11 @@ import product7 from '../assets/img/product7.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 const Sliders = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 6,
@@ -57,7 +58,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product1.src} alt="" />
+              <Image src={product1.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -65,7 +66,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product2.src} alt="" />
+              <Image src={product2.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -73,7 +74,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product3.src} alt="" />
+              <Image src={product3.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -81,7 +82,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product4.src} alt="" />
+              <Image src={product4.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -89,7 +90,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product5.src} alt="" />
+              <Image src={product5.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -97,7 +98,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product6.src} alt="" />
+              <Image src={product6.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -105,7 +106,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product7.src} alt="" />
+              <Image src={product7.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -113,7 +114,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product7.src} alt="" />
+              <Image src={product7.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -121,7 +122,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product7.src} alt="" />
+              <Image src={product7.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>
@@ -129,7 +130,7 @@ const Sliders = () => {
       <div>
         <div className="card-background">
             <div className="card-image">
-              <img src={product7.src} alt="" />
+              <Image src={product7.src} alt="" height={100} width={100}/>
             </div>
             <span>Fresh Product</span>
         </div>

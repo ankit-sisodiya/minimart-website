@@ -6,10 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsHeart } from "react-icons/bs";
 import product1 from "../assets/img/product1.png";
 import Form from "react-bootstrap/Form";
+import Image from "next/image";
 
 const SliderDouble = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 2,
@@ -55,7 +56,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -97,7 +98,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -139,7 +140,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -181,7 +182,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -223,7 +224,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -265,7 +266,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -307,7 +308,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -349,7 +350,7 @@ const SliderDouble = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={500}/>
                           </div>
                         </div>
                         <div className="col-md-8">

@@ -3,6 +3,7 @@ import React from "react";
 import { BsHeart } from "react-icons/bs";
 import ProductImg from "../assets/img/product/product.png";
 import Form from "react-bootstrap/Form";
+import Image from "next/image";
 
 function CommonCard() {
   return (
@@ -15,7 +16,7 @@ function CommonCard() {
           </span>
         </div>
         <div className="card-image-part">
-          <img src={ProductImg.src} alt="Product Image" />
+          <Image src={ProductImg.src} alt="Product Image" height={100} width={100}/>
         </div>
         <div className="rv-product-image-detail">
           <p className="pi-name">Grapes</p>

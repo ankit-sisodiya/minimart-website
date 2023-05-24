@@ -5,12 +5,13 @@ import delivery from "../assets/img/delivery.png";
 import refund from "../assets/img/refund.png";
 import bestPrice from "../assets/img/bestPrice.png";
 import { BsEyeSlash } from "react-icons/bs";
+import Image from "next/image";
 
 function Banner() {
   return (
     <div>
       <div className="banner-section">
-        <img src={banner.src} alt="Banner" />
+        <Image src={banner.src} alt="Banner" width={500} height={500}/>
       </div>
       <div className="container">
         <div className="banner-below">
@@ -18,7 +19,7 @@ function Banner() {
             <div className="col-md-4">
               <div className="banner-below-part">
                 <div className="banner-below-image">
-                  <img src={refund.src} alt="Best-price" />
+                  <Image src={refund.src} alt="Best-price" width={500} height={500} />
                 </div>
                 <div className="banner-below-detail">
                   <p>Best Prices & Deals</p>
@@ -29,7 +30,7 @@ function Banner() {
             <div className="col-md-4">
               <div className="banner-below-part">
                 <div className="banner-below-image">
-                  <img src={bestPrice.src} alt="Refundable" />
+                  <Image src={bestPrice.src} alt="Refundable" width={500} height={500}/>
                 </div>
                 <div className="banner-below-detail">
                   <p>Refundable</p>
@@ -40,7 +41,7 @@ function Banner() {
             <div className="col-md-4">
               <div className="banner-below-part last-card">
                 <div className="banner-below-image">
-                  <img src={delivery.src} alt="Free Delivery" />
+                  <Image src={delivery.src} alt="Free Delivery" width={500} height={500}/>
                 </div>
                 <div className="banner-below-detail">
                   <p>Free Delivery</p>

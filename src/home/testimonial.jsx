@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import userImage from '../assets/img/user-profile.png'
 import { BsStar } from "react-icons/bs";
+import Image from "next/image";
 
 const Testimonial = ({ cards }) => {
   const settings = {
@@ -43,7 +44,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">
@@ -63,7 +64,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">
@@ -83,7 +84,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">
@@ -103,7 +104,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">
@@ -123,7 +124,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">
@@ -143,7 +144,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">
@@ -163,7 +164,7 @@ const Testimonial = ({ cards }) => {
                 <div className="slide">
                     <div className="testimonial-cards">
                         <div className="testimonial-profile-section">
-                          <img src={userImage.src} alt="user-profile"/>
+                          <Image src={userImage.src} alt="user-profile" height={100} width={100}/>
                           <p className="user-name">Shivam Bagora1</p>
                         </div>
                       <div className="user-comment-section">

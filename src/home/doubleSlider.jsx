@@ -7,6 +7,7 @@ import { Tab, Tabs } from "react-bootstrap/";
 import product1 from "../assets/img/product1.png";
 import { BsHeart } from "react-icons/bs";
 import Form from "react-bootstrap/Form";
+import Image from "next/image";
 
 const DoubleSlider = () => {
   const [key, setKey] = useState("home");
@@ -59,7 +60,7 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" width={500} height={80}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -73,7 +74,7 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" width={500} height={80}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -87,7 +88,7 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" width={500} height={80}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -101,7 +102,7 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" width={500} height={80}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -115,7 +116,7 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" width={500} height={80}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -129,7 +130,7 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" width={500} height={80}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -161,7 +162,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -187,7 +188,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -213,7 +214,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -239,7 +240,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -265,7 +266,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -291,7 +292,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -317,7 +318,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -343,7 +344,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -375,7 +376,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -401,7 +402,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -427,7 +428,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -453,7 +454,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -479,7 +480,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -505,7 +506,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -531,7 +532,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -557,7 +558,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -589,7 +590,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -615,7 +616,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -641,7 +642,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -667,7 +668,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -693,7 +694,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -719,7 +720,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -745,7 +746,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -771,7 +772,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -797,7 +798,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>
@@ -823,7 +824,7 @@ const DoubleSlider = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={product1.src} alt="Product Image" />
+                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
                         </div>
                         <div className="product-image-detail">
                           <p className="pi-name">Aloo Sev</p>

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsHeart} from "react-icons/bs";
 import ProductImg from "../assets/img/product/product.png";
 import Form from "react-bootstrap/Form";
+import Image from 'next/image';
 
 const RecentlyViews = () => {
     const settings = {
@@ -55,7 +56,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -81,7 +82,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -107,7 +108,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -133,7 +134,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -159,7 +160,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -185,7 +186,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -211,7 +212,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -237,7 +238,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -263,7 +264,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -289,7 +290,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -315,7 +316,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>
@@ -341,7 +342,7 @@ const RecentlyViews = () => {
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
-                          <img src={ProductImg.src} alt="Product Image" />
+                          <Image src={ProductImg.src} alt="Product Image" height={100} width={500}/>
                         </div>
                         <div className="rv-product-image-detail">
                           <p className="pi-name">Grapes</p>

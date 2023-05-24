@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsHeart } from "react-icons/bs";
 import product1 from "../assets/img/product1.png";
 import Form from "react-bootstrap/Form";
+import Image from "next/image";
 
 const SpecialProducts = () => {
   const settings = {
@@ -52,7 +53,7 @@ const SpecialProducts = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" height={80} width={100}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -66,7 +67,7 @@ const SpecialProducts = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" height={80} width={100}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -80,7 +81,7 @@ const SpecialProducts = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" height={80} width={100}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -94,7 +95,7 @@ const SpecialProducts = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <img src={product1.src} alt="" />
+                      <Image src={product1.src} alt="" height={80} width={100}/>
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -120,7 +121,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -162,7 +163,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -204,7 +205,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -246,7 +247,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -288,7 +289,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -330,7 +331,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -372,7 +373,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">
@@ -414,7 +415,7 @@ const SpecialProducts = () => {
                       <div className="row">
                         <div className="col-md-4 pr-0 d-flex">
                           <div className="special-product-image">
-                            <img src={product1.src} alt="Product Image" />
+                            <Image src={product1.src} alt="Product Image" height={100} width={100}/>
                           </div>
                         </div>
                         <div className="col-md-8">

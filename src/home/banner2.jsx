@@ -1,6 +1,7 @@
 import React from 'react';
 import secondBanner1 from '../assets/img/sb-left.png';  
 import secondBanner2 from '../assets/img/sb-right.png';  
+import Image from 'next/image';
 
 const Banner2 = () => {
   return (
@@ -9,12 +10,12 @@ const Banner2 = () => {
                 <div className="row">
                         <div className="col-md-3">
                             <div className="second-banner-left">
-                                <img src={secondBanner1.src} alt="Banner Image"/>
+                                <Image src={secondBanner1.src} alt="Banner Image" width={500} height={330}/>
                             </div>
                         </div>
                         <div className="col-md-9">
                           <div className="second-banner-right">
-                            <img src={secondBanner2.src} alt="Banner Image" />
+                            <Image src={secondBanner2.src} alt="Banner Image" width={500} height={100}/>
                           </div>
                         </div>
                 </div>

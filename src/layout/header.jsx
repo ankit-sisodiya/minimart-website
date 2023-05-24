@@ -9,6 +9,7 @@ import { BsFire, BsQrCodeScan } from "react-icons/bs";
 import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 import Link from "next/link";
 import { HiMenu } from "react-icons/hi";
+import Image from "next/image";
 
 const Header = ({ direction, ...args }) => {
   const [menu, setMenu] = useState(false);
@@ -40,7 +41,7 @@ const Header = ({ direction, ...args }) => {
                 <div className="col-md-4 logo-for-mob">
                   <div className="logo">
                     <Link href="/">
-                      <img src={Logo.src} alt="logo" />
+                      <Image src={Logo.src} alt="logo" width={500} height={500}/>
                     </Link>
                   </div>
                   <div className="hamburger-for-mob">

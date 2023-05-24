@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={inter.className}>
-        <div className="mb-3">{children}</div>
+        <div className="">{children}</div>
       </body>
     </html>
   );

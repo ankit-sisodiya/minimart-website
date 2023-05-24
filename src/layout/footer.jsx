@@ -7,6 +7,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsInstagram,BsTwitter } from 'react-icons/bs';
 import { FaFacebookF, FaLinkedinIn} from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const footer = () => {
   return (
@@ -20,7 +21,7 @@ const footer = () => {
                 <div className="row">
                   <div className="col-md-5">
                     <div className="footer-logo-part">
-                      <img src={footerLogo.src} alt="footer-logo" />
+                      <Image src={footerLogo.src} alt="footer-logo" width={500} height={500}/>
                     </div>
                     <div className="footer-contact-detail">
                       <p>
@@ -79,7 +80,7 @@ const footer = () => {
                 </div>
                 <div className="visa-section">
                   <div className="visa-cards">
-                    <img src={payment.src} alt="card" />
+                    <Image src={payment.src} alt="card" width={500} height={500}/>
                   </div>
                 </div>
                 <div className="connect-section">
