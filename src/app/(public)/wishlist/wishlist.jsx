@@ -1,5 +1,5 @@
 import CommonCard from "@app/components/common-card";
-import SliderDouble from "@app/components/slideDouble";
+// import SliderDouble from "@app/components/slideDouble";
 import React from "react";
 
 function Wishlist() {

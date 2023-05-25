@@ -4,6 +4,7 @@ import { BsPlus } from "react-icons/bs";
 import { BsDash } from "react-icons/bs";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
+import Image from "next/image";
 function CartItem() {
   return (
     <div className="cartItem">
@@ -16,7 +17,7 @@ function CartItem() {
           <div className="row">
             <div className="col-md-3">
               <div className="cartImage">
-                <img src={CartImage.src} />
+                <Image src={CartImage.src} width={500} height={150} alt=""/>
               </div>
             </div>
             <div className="col-md-9">
@@ -72,7 +73,7 @@ function CartItem() {
           <div className="row">
             <div className="col-md-3">
               <div className="cartImage">
-                <img src={CartImage.src} />
+                <Image src={CartImage.src} width={500} height={150} alt=""/>
               </div>
             </div>
             <div className="col-md-9">

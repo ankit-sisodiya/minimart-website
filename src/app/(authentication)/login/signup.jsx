@@ -19,7 +19,7 @@ function Signup() {
                   <img src={LoginLogo.src} />
                 </div>
               </div>
-            </div>
+            </div>  
           </div>
           <div className="col-md-8 padd">
             <div className="formSection">

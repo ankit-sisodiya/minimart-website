@@ -452,6 +452,7 @@ body {
 
 .product-description button:hover {
   background-color: #ec6c30;
+  color: #fff;
 }
 
 .double-slider-section .nav-tabs {
@@ -509,7 +510,7 @@ body {
 }
 
 .card-boxes {
-  padding: 0.5rem;
+  padding: 1rem 0;
 }
 
 .card-section {

@@ -1,6 +1,7 @@
 import React from "react";
 import CAT from "@app/assets/img/category/cat.png";
 import Link from "next/link";
+import Image from "next/image";
 
 function CatCard() {
   const categorydata = [
@@ -34,7 +35,8 @@ function CatCard() {
                   <div className="flip-card-inner">
                     <div className="flip-card-front">
                       <div className="mainCard">
-                        <img src={CAT.src} />
+                        {/* <Image src={CAT.src} alt="" fill='true'/> */}
+                        <img src={CAT.src} alt=""/>
                         <div className="cardHead">
                           <h3>{x}</h3>
                         </div>

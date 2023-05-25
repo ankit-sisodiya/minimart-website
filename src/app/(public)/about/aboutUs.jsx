@@ -3,13 +3,11 @@ import React from "react";
 import delivery from "@app/assets/img/delivery.png";
 import refund from "@app/assets/img/refund.png";
 import bestPrice from "@app/assets/img/bestPrice.png";
+import Image from "next/image";
 
 function AboutUs() {
   return (
     <div className="aboutSection">
-      <div className="MainHead">
-        <h2>My Wishlist (6 Items)</h2>
-      </div>
       <div className="about">
         <div className="aboutHead">
           <h5>
@@ -70,7 +68,7 @@ function AboutUs() {
           <div className="col-md-4">
             <div className="banner-below-part">
               <div className="banner-below-image">
-                <img src={refund.src} alt="Best-price" />
+                <Image src={refund.src} alt="Best-price" height={100} width={100}/>
               </div>
               <div className="banner-below-detail">
                 <p>Best Prices & Deals</p>
@@ -81,7 +79,7 @@ function AboutUs() {
           <div className="col-md-4">
             <div className="banner-below-part">
               <div className="banner-below-image">
-                <img src={bestPrice.src} alt="Refundable" />
+                <Image src={bestPrice.src} alt="Refundable" height={100} width={100}/>
               </div>
               <div className="banner-below-detail">
                 <p>Refundable</p>
@@ -92,7 +90,7 @@ function AboutUs() {
           <div className="col-md-4">
             <div className="banner-below-part last-card">
               <div className="banner-below-image">
-                <img src={delivery.src} alt="Free Delivery" />
+                <Image src={delivery.src} alt="Free Delivery" height={100} width={100}/>
               </div>
               <div className="banner-below-detail">
                 <p>Free Delivery</p>

@@ -6,6 +6,7 @@ import productDetail from '@app/assets/img/productDetail.png';
 import productImageA from '@app/assets/img/pda.png';
 import productImageB from '@app/assets/img/pdb.png';
 import productImageC from '@app/assets/img/pdc.png';
+import Image from 'next/image';
 
 const ProductDetail = () => {
   return (
@@ -19,18 +20,18 @@ const ProductDetail = () => {
                             <div className="col-md-3">
                                 <div className="pd-image-detail-column">
                                     <div className="product-image-option">
-                                        <img src={productImageA.src} alt="product other images" />
+                                        <Image height={100} width={500} src={productImageA.src} alt="product other images" />
                                     </div>
                                     <div className="product-image-option">
-                                        <img src={productImageB.src} alt="product other images" />
+                                        <Image height={100} width={500} src={productImageB.src} alt="product other images" />
                                     </div>
                                     <div className="product-image-option">
-                                        <img src={productImageC.src} alt="product other images" />
+                                        <Image height={100} width={500} src={productImageC.src} alt="product other images" />
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-9">
-                                <img src={productDetail.src} alt="product-image" className="product-enlarge" />
+                                <Image height={100} width={500} src={productDetail.src} alt="product-image" className="product-enlarge" />
                             </div>
                         </div>
                     </div>
