@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import product1 from '../assets/img/product1.png';
 import product2 from '../assets/img/product2.png';
