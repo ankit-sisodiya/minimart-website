@@ -13,7 +13,7 @@ function Deal() {
           {similarSection.map((x, i) => {
             return (
               <div key={i} className="col-md-3">
-                <CommonCard />
+                <CommonCard />  
               </div>
             );
           })}

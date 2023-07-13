@@ -1,6 +1,7 @@
 .signUp .btn {
   background-color: #2670b7;
   color: #fff !important;
+  margin-left: 2em !important;
 }
 .signUp .btn:hover {
   background-color: #2670b7;

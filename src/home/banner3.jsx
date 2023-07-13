@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 const Banner3 = () => {
   return (
-    <div>
-      <div className="thirdBanner">
+    <div className='thirdBanner'>
+      <div className="container">
         <div className="row">
             <div className="thirdBanner-section">
                 <div className="col-md-6">

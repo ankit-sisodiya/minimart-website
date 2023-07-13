@@ -8,9 +8,12 @@ import product1 from "../assets/img/product1.png";
 import { BsHeart } from "react-icons/bs";
 import Form from "react-bootstrap/Form";
 import Image from "next/image";
+import CommonCard from "@app/components/common-card";
 
 const DoubleSlider = () => {
   const [key, setKey] = useState("home");
+
+  const similarSection = [1, 2, 3, 4, 5, 6, 7, 8];
 
   const settings = {
     dots: false,
@@ -29,8 +32,8 @@ const DoubleSlider = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: false,
-          rows: 2
-        }
+          rows: 2,
+        },
       },
       {
         breakpoint: 600,
@@ -39,9 +42,9 @@ const DoubleSlider = () => {
           slidesToScroll: 1,
           rows: 1,
           dots: false,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
   return (
@@ -60,7 +63,12 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <Image src={product1.src} alt="" width={500} height={80}/>
+                      <Image
+                        src={product1.src}
+                        alt=""
+                        width={500}
+                        height={80}
+                      />
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -74,7 +82,12 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <Image src={product1.src} alt="" width={500} height={80}/>
+                      <Image
+                        src={product1.src}
+                        alt=""
+                        width={500}
+                        height={80}
+                      />
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -88,7 +101,12 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <Image src={product1.src} alt="" width={500} height={80}/>
+                      <Image
+                        src={product1.src}
+                        alt=""
+                        width={500}
+                        height={80}
+                      />
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -102,7 +120,12 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <Image src={product1.src} alt="" width={500} height={80}/>
+                      <Image
+                        src={product1.src}
+                        alt=""
+                        width={500}
+                        height={80}
+                      />
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -116,7 +139,12 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <Image src={product1.src} alt="" width={500} height={80}/>
+                      <Image
+                        src={product1.src}
+                        alt=""
+                        width={500}
+                        height={80}
+                      />
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -130,7 +158,12 @@ const DoubleSlider = () => {
                 <div className="product-detail">
                   <div className="row">
                     <div className="col-md-4">
-                      <Image src={product1.src} alt="" width={500} height={80}/>
+                      <Image
+                        src={product1.src}
+                        alt=""
+                        width={500}
+                        height={80}
+                      />
                     </div>
                     <div className="col-md-8">
                       <div className="product-description">
@@ -149,700 +182,45 @@ const DoubleSlider = () => {
               id="controlled-tab-example"
               activeKey={key}
               onSelect={(k) => setKey(k)}
-              className="mb-3"
+              className="mb-1"
             >
               <h2>Trending Products</h2>
               <Tab eventKey="home" title="Featured">
                 <div className="tab-section-container">
                   <Slider {...settings}>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
+                    {similarSection.map((x, i) => {
+                      return (
+                        <div key={i} className="col-md-3">
+                          <CommonCard />
                         </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </Slider>
                 </div>
               </Tab>
               <Tab eventKey="profile" title="Latest">
                 <div className="tab-section-container">
-                <Slider {...settings}>
-                <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
+                  <Slider {...settings}>
+                    {similarSection.map((x, i) => {
+                      return (
+                        <div key={i} className="col-md-3">
+                          <CommonCard />
                         </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </Slider>
                 </div>
               </Tab>
               <Tab eventKey="contact" title="Bestseller">
                 <div className="tab-section-container">
                   <Slider {...settings}>
-                  <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
+                    {similarSection.map((x, i) => {
+                      return (
+                        <div key={i} className="col-md-3">
+                          <CommonCard />
                         </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card-boxes">
-                      <div className="card-section">
-                        <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
-                          <span className="pi-icon"><BsHeart/></span>
-                        </div>
-                        <div className="card-image-part">
-                          <Image src={product1.src} alt="Product Image" width={500} height={100}/>
-                        </div>
-                        <div className="product-image-detail">
-                          <p className="pi-name">Aloo Sev</p>
-                          <p className="pi-price">AED 35.00 <span className="pi-cutPrice">38.00</span></p>
-                          <div className="cartButtons">
-                              <button>Add to Cart</button>
-                              <div className="pi-dropdown">
-                                  <Form.Select aria-label="Default select example">
-                                      <option>1 Kg/Unit</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </Form.Select>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      );
+                    })}
                   </Slider>
                 </div>
               </Tab>

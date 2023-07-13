@@ -41,7 +41,7 @@ const SliderDouble = () => {
     ],
   };
   return (
-    <div>
+    <div className="mt-5">
       <div className="specialProduct-section">
         <div className="row">
           <div className="col-md-12">
@@ -65,7 +65,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -107,7 +107,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -149,7 +149,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -191,7 +191,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -233,7 +233,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -275,7 +275,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -317,7 +317,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>
@@ -359,7 +359,7 @@ const SliderDouble = () => {
                               <BsHeart />
                             </span>
                             <p className="sp-name">Ratlami Sev</p>
-                            <span className="best-deal-button">Best deal</span>
+                            <span className="best-deal-button">Hot deal</span>
                             <p className="sp-price">
                               AED 35.00{" "}
                               <span className="sp-cutPrice">38.00</span>

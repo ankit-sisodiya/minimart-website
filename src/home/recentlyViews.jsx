@@ -42,7 +42,7 @@ const RecentlyViews = () => {
       };
     
   return (
-    <div>
+    <div className='mt-5'>
       <div className="recent-view-section">
         <div className="recent-view-heading">
             <h2>Recently Views</h2>
@@ -52,7 +52,7 @@ const RecentlyViews = () => {
                        <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -78,7 +78,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -104,7 +104,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -130,7 +130,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -156,7 +156,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -182,7 +182,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -208,7 +208,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -234,7 +234,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -260,7 +260,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -286,7 +286,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -312,7 +312,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">
@@ -338,7 +338,7 @@ const RecentlyViews = () => {
                     <div className="card-boxes">
                       <div className="card-section">
                         <div className="card-offer-part">
-                          <span className="offer-deal">Best deal</span>
+                          <span className="offer-deal">Hot deal</span>
                           <span className="pi-icon"><BsHeart/></span>
                         </div>
                         <div className="card-image-part">

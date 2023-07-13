@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Banner2 = () => {
   return (
-    <div>
+    <div className='mt-5'>
         <div className="second-banner">
                 <div className="row">
                         <div className="col-md-3">

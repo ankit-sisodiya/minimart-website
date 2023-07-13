@@ -9,9 +9,9 @@ import Image from "next/image";
 
 function Banner() {
   return (
-    <div>
+    <>
       <div className="banner-section">
-        <Image src={banner.src} alt="Banner" width={500} height={500}/>
+        <Image src={banner.src} alt="Banner" width={500} height={500} />
       </div>
       <div className="container">
         <div className="banner-below">
@@ -19,7 +19,12 @@ function Banner() {
             <div className="col-md-4">
               <div className="banner-below-part">
                 <div className="banner-below-image">
-                  <Image src={refund.src} alt="Best-price" width={500} height={500} />
+                  <Image
+                    src={refund.src}
+                    alt="Best-price"
+                    width={500}
+                    height={500}
+                  />
                 </div>
                 <div className="banner-below-detail">
                   <p>Best Prices & Deals</p>
@@ -30,7 +35,12 @@ function Banner() {
             <div className="col-md-4">
               <div className="banner-below-part">
                 <div className="banner-below-image">
-                  <Image src={bestPrice.src} alt="Refundable" width={500} height={500}/>
+                  <Image
+                    src={bestPrice.src}
+                    alt="Refundable"
+                    width={500}
+                    height={500}
+                  />
                 </div>
                 <div className="banner-below-detail">
                   <p>Refundable</p>
@@ -41,7 +51,12 @@ function Banner() {
             <div className="col-md-4">
               <div className="banner-below-part last-card">
                 <div className="banner-below-image">
-                  <Image src={delivery.src} alt="Free Delivery" width={500} height={500}/>
+                  <Image
+                    src={delivery.src}
+                    alt="Free Delivery"
+                    width={500}
+                    height={500}
+                  />
                 </div>
                 <div className="banner-below-detail">
                   <p>Free Delivery</p>
@@ -54,7 +69,7 @@ function Banner() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

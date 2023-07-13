@@ -80,7 +80,7 @@ function Signup() {
                           className="mb-3"
                           controlId="exampleForm.ControlInput1"
                         >
-                          <Form.Control type="text" placeholder="First Name" />
+                          <Form.Control type="text" placeholder="Name" />
                         </Form.Group>
                       </div>
                       <div className="col-md-12">

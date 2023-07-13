@@ -114,6 +114,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   align-items: baseline !important;
+  float: right;
 }
 
 .hamburger-for-mob {
@@ -130,7 +131,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
+  width: 120px;
   height: 50px;
   color: #000;
   outline: none;
@@ -296,7 +297,7 @@ body {
 
 .banner-below-detail span {
   font-weight: 500;
-  color: #adadad;
+  color: #646161;
   font-size: 13px;
 }
 
@@ -408,8 +409,11 @@ body {
   font-size: 17px;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 0 !important;
 }
-
+.specialProduct-heading h3 {
+  font-weight: 600;
+}
 .sidebar-below-products {
   padding: 0 15px;
 }
@@ -510,7 +514,7 @@ body {
 }
 
 .card-boxes {
-  padding: 1rem 0 !important;
+  padding: 0.4rem 0 !important;
 }
 
 .card-section {
@@ -554,7 +558,7 @@ body {
 
 .product-image-detail {
   background-color: #e9f1f8;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
@@ -583,7 +587,7 @@ body {
   color: #fff;
   font-weight: 700;
   font-size: 12px;
-  border: none !important;
+  /* border: none !important; */
   border-radius: 7px;
   box-shadow: none;
   padding: 0 15px !important;
@@ -718,7 +722,7 @@ body {
 /* //////////////// recently views style /////////// */
 .rv-product-image-detail {
   background-color: #fffae7;
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
 }
@@ -855,7 +859,7 @@ body {
 }
 
 .sliderContainer .slick-list {
-  padding-top: 5rem !important;
+  padding-top: 3rem !important;
   padding-bottom: 5rem !important;
 }
 
@@ -1066,10 +1070,17 @@ body {
 }
 
 .pd-image-detail-column {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  height: 21em;
+  overflow-y: auto;
+}
+
+.product-image-option {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .product-image-option img {
@@ -1627,4 +1638,44 @@ body {
 }
 .icon-button a {
   text-decoration: none !important;
+}
+
+.viewCart {
+  border: 1px solid #2670b7 !important;
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.wrapperss {
+  height: 40px;
+  display: flex;
+}
+.quantity {
+  -webkit-appearance: none;
+  border: none !important;
+  text-align: center;
+  width: 30px;
+
+  font-size: 16px;
+  color: #43484d;
+  font-weight: 300;
+  border: 1px solid #e1e8ee;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.pd-image-detail{
+  position: sticky;
+  top: 0px; 
+  /* background: rgb(255, 100, 100); */
+  padding: 20px;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+.product-detail-side{
+  flex-grow: 1;
 }

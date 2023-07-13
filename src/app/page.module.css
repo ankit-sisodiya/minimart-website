@@ -1,5 +1,5 @@
 .main {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -234,4 +234,5 @@
 .signUp .btn{
   background-color: #2670B7;
   color: #fff;
+  margin-left: 2em !important;
 }

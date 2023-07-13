@@ -50,7 +50,7 @@ const Sliders = () => {
 
   return (
     <div className='categorySlider'>
-      <div className="category-heading">
+      <div className="category-heading mt-0">
         <h3>Explore Categories</h3>
       </div>
        <Slider {...settings}>
